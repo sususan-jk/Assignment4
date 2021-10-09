@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            overflow: scroll;
+        }
+
+        .nav-wrapper {
+            width: 100%;
+            height: 70px;
+            border-bottom: 1px solid indigo;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-brand>a>img {
+            width: 200px;
+            padding-left: 10px;
+        }
+
+        .nav-brand-logo>a>img {
+            display: none;
+            width: 220px;
+            padding-top: 10px;
+            padding-left: 30px;
+        }
+
+        .nav-brand>a:hover {
+            text-decoration: underline darkgreen;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .menu {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            padding-left: 40px;
+        }
+
+        ul>li {
+            list-style-type: none;
+
+        }
+
+        ul>li>a {
+            text-decoration: none;
+            height: 48px;
+            color: #000066;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 0 15px 0 15px;
+            /*top right bottom left;*/
+            text-align: center;
+            font-size: 16px;
+
+        }
+
+        ul>li>a:hover {
+            text-decoration: underline indigo;
+            color: darkgreen
+        }
+
+        .hamburger-wrapper {
+            display: none;
+            background-color: transparent;
+            border: none;
+            outline: none;
+        }
+
+        .hamburger {
+            width: 25px;
+        }
+
+        .show {
+            display: inline-block;
+        }
+
+        p {
+            text-align: justify;
+            padding-top: 20px;
+        }
+
+        @media screen and (max-width:480px) {
+            .hamburger-wrapper {
+                display: inline-block;
+            }
+
+            .nav-brand-logo>a>img {
+                display: inline-block;
+            }
+
+            .navbar,
+            .menu,
+            ul {
+                flex-direction: column;
+                width: 100%;
+                background-color: white;
+            }
+
+            .nav-wrapper {
+                position: fixed;
+                background-color: white;
+            }
+
+            .navbar {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                align-items: flex-start;
+                height: unset;
+            }
+
+            .nav-brand {
+                padding: 10px 5px 10px 20px;
+            }
+
+            ul {
+                align-items: flex-start;
+                border-top: 1px solid indigo;
+            }
+
+            ul>li {
+                width: 100%;
+                height: 39px;
+                display: flex;
+                align-items: center;
+                padding-top: 5px;
+            }
+
+            ul>li>a {
+                width: 100%;
+                height: fit-content;
+                text-align: left;
+                padding-left: 1px;
+                padding-bottom: 5px;
+
+
+            }
+
+            .hamburger-wrapper {
+                position: relative;
+                margin-left: auto;
+            }
+
+            .hamburger {
+                position: absolute;
+                top: 25%;
+                transform: translate(-50%);
+                right: 15px;
+            }
+            p{
+                margin-top: 60px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="nav-brand-logo"><a><img src="icon.jpg" alt="logo" /></a></div>
+            <div class="navbar">
+                <div class="menu">
+                    <div class="nav-brand"><a><img src="icon.jpg" alt="icon" /></a></div>
+                    <ul>
+                        <li><a href="#">Weekly Quiz</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Hire Team</a></li>
+                        <li><a href="#">Guest Post</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button class="hamburger-wrapper">
+                <img class="hamburger" src="menu (1).png" alt="hamburger button" />
+            </button>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, sapiente veritatis et alias
+            distinctio
+            consectetur impedit ea rerum eveniet fuga sed a consequatur. Consectetur recusandae tenetur ipsum
+            deserunt
+            eum, esse dolorem iure perferendis tempore reiciendis labore praesentium earum id repellat illo,
+            inventore
+            similique molestiae laudantium mollitia hic libero. Aut tempora delectus illum dolore sed,
+            consequatur
+            voluptatibus fugiat veritatis maxime quia dolorem quos minima eum qui. A officia dicta animi illum,
+            est
+            laboriosam odit alias nisi nostrum quaerat necessitatibus odio inventore nulla ipsum repellat omnis
+            ea
+            qui
+            et eius magni exercitationem facilis? Corporis laudantium rem quisquam, quos eius consequatur omnis
+            saepe
+            hic nulla sint aut? Deleniti a, magnam unde illum molestias odio, tempore eum quos, laborum minima
+            ut
+            alias!
+            Fuga, dolores. Itaque laboriosam deserunt nostrum odio enim amet consectetur earum maiores doloribus
+            ducimus
+            beatae atque, inventore quis magni quam nobis blanditiis nemo asperiores quidem nulla. Qui, sint.
+            Quasi
+            dignissimos culpa mollitia saepe at soluta sint voluptatem. Quo assumenda dicta corrupti doloribus
+            itaque
+            magni voluptate sit, hic voluptates fuga voluptas, eaque blanditiis amet! Atque minus in, culpa
+            aspernatur
+            ullam perferendis? Sunt possimus quaerat tempore blanditiis temporibus ipsa sapiente deleniti
+            dolores
+            minus
+            deserunt. Beatae aspernatur error voluptatibus magni consectetur! Et vero perspiciatis suscipit
+            harum
+            facilis dolorem amet ratione eligendi fugiat! Voluptas sint reprehenderit unde quas, officia tempore
+            harum
+            odio temporibus hic saepe ut maiores natus facere adipisci fugit laudantium molestias. Adipisci
+            dolore
+            nam
+            beatae quibusdam commodi vitae eaque quam, aperiam quod natus, possimus eum vel blanditiis nihil
+            omnis
+            perspiciatis saepe voluptas doloremque. Sint perspiciatis quo molestiae, illo dolor culpa laudantium
+            autem
+            sequi corporis, nesciunt quis, consequuntur asperiores unde? Dolorem maiores architecto error esse.
+            Dignissimos distinctio ipsam rem velit nihil recusandae voluptatum, totam saepe earum ducimus,
+            mollitia,
+            iure porro animi doloremque eligendi voluptatem. Saepe magni maxime ratione. Ad obcaecati, ipsa
+            repellendus
+            est delectus non!
+        </p>
+    </div>
+    <script>
+        const hamburgerButton = document.querySelector('.hamburger');
+        hamburgerButton.addEventListener('click', function () {
+            const navbar = document.querySelector('.navbar');
+            const navbarStyle = navbar.style;
+            if (navbarStyle.getPropertyValue('display') === "none") {
+                navbarStyle.setProperty('display', 'flex');
+            }
+            else {
+                navbarStyle.setProperty('display', 'none');
+            }
+        });
+    </script>
+</body>
+
+</html>
